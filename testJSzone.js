@@ -13,12 +13,6 @@ const motorcycles = [
 
 //Task 3 using a for loop, loop through the motorcycles array and console.log() only your bikes make .toUpperCase().
 
-
-
-
-
-
-
 //REMEMBER to find length apply (.length) to the object in question , be it a string , array etc. i.e motorcycles.length ==> returns "6".
 //
 //
@@ -34,7 +28,7 @@ const motorcycles = [
 //
 // Part 2. An "expression" usually a comparison that checks if the counting number (in this case " i " ) has reached a certain value:
 //
-//         for(..... ; i < 10 ; ......) {
+//         for(..... ; i <= 10 ; ......) {
 //
 //          }
 //         Is "i" still less than or equal to 10?
@@ -110,10 +104,75 @@ const motorcycles = [
 //
 //  LAst put togTh3r
 
-let fucksGvienByCasey = 5;
+// let fucksGvienByCasey = 5;
 
-for (i = 1; i <= fucksGvienByCasey; i++) {
-  console.log(" Fucks given by Casey : " + i);
-}
+// for (i = 1; i <= fucksGvienByCasey; i++) {
+//   console.log(" Fucks given by Casey : " + i);
+// }
 
 //In the end she gave tooo many fucks about for loops ... savage
+
+// for in loop
+
+// for (somthing "in" something else ){
+//   do this shit
+// }
+// const stable = [
+//   "Buttercup",
+//   "Sea Biscuit",
+//   "Darma",
+//   "Zeek",
+//   "TryHArd",
+//   "Fuckboii"
+// ];
+
+// // // Print horses individually to console in reverse, if horse === Zeek say fuck Colin
+
+// for (horse in stable) {
+//   console.log("Fuck Colin he's a hoe");
+// }
+
+// /// build me an array named bottle in this bottle is a mix of pharmy drugs
+
+// let i = 0;
+
+// // while loop
+
+// while (i <= 10) {
+//   console.log("Fuck Colin");
+//   i++;
+// }
+
+// // do while loop
+// let done = false;
+
+// do {
+//   console.log("Fuck Colin");
+
+//   if (i === 10) {
+//     done = true;
+//   }
+// } while (!done);
+
+// // for loop
+
+const numbers = [3, 24, 15, -1, 200, 13, -80, 14, 10000, -19];
+
+// if(numbers[i] - 4 % 10 === 0)
+
+// i = 24
+// i - 4
+// i = 20
+// i / 10 = 0 // no remainder
+// //i is in fact a number with a 4 at the end
+
+for (number in numbers) {
+  if (
+    numbers[number]
+      .toString() // turn this into a string
+      .split("") // Split that strin apart i.e if numbers[i] = "24" ===> " 2 4"
+      .pop() === "4" // give me the last character if the character is a " 4"
+  ) {
+    console.log(numbers[number]);
+  }
+}
